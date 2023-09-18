@@ -1,5 +1,13 @@
 body { min-height: 100vh; }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&display=swap');
+
+main, header, footer{
+
+    font-family: 'Inter', sans-serif;
+    
+}
+
 body{
 
     background-image: url(/assets/img/bg.jpg);
