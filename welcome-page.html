@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome-page</title>
-    <link rel="stylesheet" href="/assets/css/welcome-page-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/welcome-page-style.css">
 </head>
 
 <body>
@@ -14,7 +17,7 @@
         <header>
 
             <div id="logo-epicode">
-                <img src="/assets/css/img/epicode_logo.png" alt="epicode-logo">
+                <img src="assets/img/epicode_logo.png" alt="epicode-logo">
             </div>
 
             <div id="main-title">
@@ -24,7 +27,7 @@
         </header>
 
         <main>
-            
+
             <div>
                 <h2>Instructions</h2>
 
@@ -46,20 +49,16 @@
 
         <footer>
 
-            <form>
+            <div>
 
-                <div>
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">I promise to answer myself without help from anyone</label>
 
-                    <input type="checkbox" id="checkbox" required>
-                    <label for="checkbox">I promise to answer myself without help from anyone</label>
+            </div>
 
-                </div>
-
-                <div id="button">
-                    <button>PROCEED</button>
-                </div>
-
-            </form>
+            <div id="button">
+                <a href="" id="anchor-button">PROCEED</a>
+            </div>
 
         </footer>
 
