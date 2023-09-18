@@ -1,0 +1,34 @@
+header {
+  width: 100vw;
+
+  height: 15vh;
+}
+.container {
+  width: 100vw;
+}
+.questions-wrap {
+  width: 100vw;
+  height: 70vh;
+}
+footer {
+  text-align: center;
+  width: 100vw;
+
+  height: 15vh;
+}
+.question {
+  text-align: center;
+  font-size: 2em;
+  width: 100vw;
+  height: 25vh;
+  padding-top: 15vh;
+}
+.answers {
+  text-align: center;
+}
+.answers button {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
