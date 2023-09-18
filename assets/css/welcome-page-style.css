@@ -1,29 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 body {
   background-image: url(/assets/img/background.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   color: white;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
 #logo-epicode img {
-  width: 160px;
+  width: 145px;
 
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #container {
-  padding: 40px 50px 70px 50px;
+  padding: 30px 50px 90px 80px;
 }
 
 h1 {
-  font-size: 4.8em;
+  font-size: 60px;
   font-family: "Outfit", sans-serif;
-  line-height: 0.8em;
+  line-height: 0.9em;
 }
 
 div #main-title {
-  width: 550px;
+  width: 450px;
   margin-bottom: 40px;
 }
 
@@ -32,9 +36,9 @@ span {
 }
 
 h2 {
-  color: #d20094;
-  font-size: 2.2em;
-  font-weight: bold;
+  color: #C2128D;
+  font-size: 1.5em;
+  font-weight: 700;
   margin-bottom: 10px;
   font-family: "Outfit", sans-serif;
 }
@@ -42,31 +46,37 @@ h2 {
 p {
   width: 500px;
   line-height: 1.2em;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 ul {
   list-style: disc;
   line-height: 1.5em;
   margin-bottom: 70px;
-  margin-block-start: 1em;
-  margin-inline-start: 0px;
+  margin-inline-start: 1.3em;
 }
 
 footer div {
   display: inline;
 }
 
-#anchor-button {
+#button {
   padding: 15px 50px;
   box-shadow: 1px 1px 30px #00ffff;
   background-color: #00ffff;
   color: #0b113b;
+  border:none;
   margin-left: 100px;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1.2em;
 }
+
+#button:hover {
+  background-color: #757fc7;
+  box-shadow: 1px 1px 30px #757fc7;
+}
+
+#checkbox {
+  margin-inline-start: 0.3em;
+}
+
