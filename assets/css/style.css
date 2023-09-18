@@ -1,0 +1,80 @@
+body { min-height: 100vh; }
+
+body{
+
+    background-image: url(/assets/img/bg.jpg);
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+/* qui inizia header */
+
+header img{
+    width: 300px;
+    padding: 5em;
+    margin-left: 7em;
+}
+
+
+/* qui inizia main */
+
+main h1{
+
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 80px;
+
+}
+
+main h3{
+
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 3em;
+}
+
+
+
+main h2{
+
+margin-left: 6em;
+color: white;
+font-size: 80px;
+
+}
+
+
+.container{
+
+display: inline-block;
+padding: 3em;
+margin-bottom: 3em ;
+}
+
+
+
+
+/* qui inizia footer */
+
+footer button {
+
+font-size: 30px;
+border-color: white;
+border-width: 5px;
+background-color: transparent;
+color: white;
+padding: 1em 3em;
+
+}
+
+footer form{
+
+text-align: center;
+margin-top: 2em;
+
+}
