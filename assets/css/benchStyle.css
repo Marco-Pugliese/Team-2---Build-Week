@@ -1,20 +1,26 @@
+body {
+  overflow: hidden;
+}
 header {
   width: 100vw;
-
   height: 15vh;
 }
 .container {
   width: 100vw;
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
 }
 .questions-wrap {
   width: 100vw;
   height: 70vh;
+  color: white;
 }
 footer {
   text-align: center;
   width: 100vw;
-
+  color: white;
   height: 15vh;
+  padding-top: 10px;
 }
 .question {
   text-align: center;
@@ -31,4 +37,29 @@ footer {
 }
 .hide {
   display: none;
+}
+#logo > img {
+  padding: 40px 80px;
+}
+#timer-wrap {
+  text-align: center;
+  margin-left: 80vw;
+  border: 10px solid turquoise;
+  transform: translateY(-45px);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
+}
+#timer {
+  margin-top: 25px;
+  font-size: 0.5em;
+}
+#timer > span {
+  display: block;
+  font-size: 5em;
+}
+footer b {
+  color: rgb(183, 1, 138);
 }
