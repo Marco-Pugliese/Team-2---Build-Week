@@ -1,7 +1,7 @@
 body {
     background-image: url(/assets/img/bg.jpg);
     background-repeat:no-repeat;
-
+    font-family: 'Outfit', sans-serif;
    background-size:cover;
 }
 
@@ -11,6 +11,8 @@ header img {
     padding-top: 5em;
     margin-bottom: 2em;
 }
+
+
 
 
 
@@ -28,6 +30,9 @@ header img {
     font-size: 2.5em;
     margin-top: 1em;
     margin-bottom: 0.3em;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px white;
+
 }
 
 
@@ -102,7 +107,9 @@ transition: box-shadow 0.3s;
 
 
 #comment-area button span {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5em;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px white;
+
     
 }
