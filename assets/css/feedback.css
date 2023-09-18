@@ -72,5 +72,16 @@ header img {
     background-color:transparent;
     border-bottom: 2px solid red;
     padding: 20px;
+    padding-bottom: 0.2em;
+    padding-top: 5em;
+}
 
+#comment::placeholder {
+  
+    color: #999; 
+    width: 15em;
+    font-size: 1.5em; 
+    
+    
+    
 }
