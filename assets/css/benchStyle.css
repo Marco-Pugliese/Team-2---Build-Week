@@ -34,6 +34,13 @@ footer {
 }
 .answers button {
   text-align: center;
+  width: 15vw;
+  height: 8vh;
+  margin: 1%;
+  border-radius: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
 }
 .hide {
   display: none;
