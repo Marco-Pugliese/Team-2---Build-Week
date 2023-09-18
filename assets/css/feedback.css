@@ -92,16 +92,17 @@ width: 20em;
 height: 6em;
 color: black;
 background-color: #01FFFF;
-
+border: none;
+box-shadow: 0px 0px 50px #01FFFF;
+transition: box-shadow 0.3s;
 }
+
+
+
+
 
 #comment-area button span {
     font-size: 2em;
     font-weight: bold;
     
-}
-
-button {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-transition: box-shadow 0.3s;
 }
