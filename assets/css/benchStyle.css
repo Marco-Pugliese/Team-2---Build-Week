@@ -68,7 +68,7 @@ section {
 }
 #timer-wrap-cover {
   margin-left: 80vw;
-  border: 10px solid red;
+  /* border: 10px solid red; */
   transform: translateY(-60px);
   border-radius: 50%;
   width: 100px;
@@ -79,8 +79,8 @@ section {
 #timer-wrap {
   text-align: center;
   transform: translate(-10px, -10px);
-  border: 10px solid teal;
-  /* border-image: linear-gradient(10%, transparent, 90% orange); */
+  border: 10px solid rgb(3, 207, 207);
+  /* background: linear-gradient(to right, white 10%, teal 20%, red 70%); */
   border-radius: 50%;
   width: 100px;
   height: 100px;
