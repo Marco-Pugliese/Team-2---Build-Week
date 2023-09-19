@@ -4,10 +4,17 @@ for (let i = 0; i < allBtn.length; i++) {
   console.log(allBtn[i]);
   allBtn[i].addEventListener("click", (e) => {
     e.preventDefault();
+    const selected = document.querySelectorAll(".selectedAnswer");
+    for (let y = 0; y < selected.length; y++) {
+      selected[y].classList.remove("selectedAnswer");
+    }
+    allBtn[i].classList.toggle("selectedAnswer");
+    allBtn[i].classList.add("chosen");
+    if (allBtn[i].classList.contains("selectedAnswer")) {
+      conf.classList.add("selectedBtn");
+    }
   });
 }
-<<<<<<< Updated upstream
-=======
 let scoreBenchmark = 0;
 conf.addEventListener("click", () => {
   for (let i = 0; i < allBtn.length; i++) {
@@ -110,32 +117,10 @@ conf.addEventListener("click", scorripagina);
 let countdownNumberEl = document.getElementById("timer-num");
 let countdown = 10;
 
+// countdownNumberEl.textContent = countdown;
 
-function startCountdown_circle() {
-  const circle = document.querySelector(".circle");
-  let secondi = 30;
+// setInterval(function () {
+//   countdown = --countdown <= 0 ? 10 : countdown;
 
-  // Aggiungi la classe animate per iniziare l'animazione
-  circle.classList.add("animate");
-
-  const countdown = setInterval(() => {
-    if (secondi === 0) {
-      // Rimuovi la classe animate per fermare l'animazione
-      circle.classList.remove("animate");
-
-      // Forza un reflow
-      void circle.offsetWidth;
-
-      // Aggiungi la classe animate per riavviare l'animazione
-      circle.classList.add("animate");
-
-      secondi = 30; // Reset the countdown
-    } else {
-      secondi--;
-    }
-  }, 1000);
-}
-
-startCountdown_circle();
-
->>>>>>> Stashed changes
+//   countdownNumberEl.textContent = countdown;
+// }, 1000);
