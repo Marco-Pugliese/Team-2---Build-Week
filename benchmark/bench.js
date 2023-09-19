@@ -94,13 +94,13 @@ const d_text = document.getElementById("d_text");
 let currentBench = 0;
 let score = 0;
 
+/*funzione che cancella la selezione precedente prima di passare alla domada successiva*/
+
+let answer;
 const deselectAnswer = () => {
   answerElements.forEach((answer.checked = false));
 };
-/*funzione che cancella la selezione precedente prima di passare alla domada successiva*/
-
 const getSelected = () => {
-  let answer;
   answerElements.forEach((answerElement) => {
     if (answerElement.checked) answer = answerElement.id;
   });
@@ -119,7 +119,7 @@ const loadBench = () => {
 
 loadBench();
 
-submitButton.addEventListener("click", () => {
+conf.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
     if (answer === benchData[currentBench].correct) score++;

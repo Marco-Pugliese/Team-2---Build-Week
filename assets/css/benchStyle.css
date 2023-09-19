@@ -27,15 +27,23 @@ footer {
 }
 .question {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   width: 100vw;
   height: 25vh;
   padding-top: 15vh;
 }
+.answers button.selectedAnswer {
+  background-color: rgb(183, 1, 138);
+  border: 0.5px solid rgb(183, 1, 138);
+  border-top: 3px solid rgb(183, 1, 138);
+  border-left: 3px solid rgb(183, 1, 138);
+  border-right: 0.5 solid rgb(183, 1, 138);
+  border-bottom: 0.4 solid rgb(183, 1, 138);
+}
 .answers {
   text-align: center;
 }
-.answers button {
+.answers > button {
   text-align: center;
   width: 33%;
   height: 8vh;
@@ -49,8 +57,11 @@ footer {
   background-color: transparent;
   color: white;
 }
-.hide {
+section {
   display: none;
+}
+.show {
+  display: block;
 }
 #logo > img {
   padding: 40px 80px;
@@ -74,17 +85,25 @@ footer {
   display: block;
   font-size: 5em;
 }
+footer {
+  margin-top: 30px;
+}
 footer b {
   color: rgb(183, 1, 138);
 }
 
-#check {
-  width: 50px;
-  background-color: none;
+#send.selectedBtn {
+  border: 3px solid rgb(183, 1, 138);
+  border-radius: 20px;
+  background-color: rgb(183, 1, 138);
 }
-#checkbox {
-  display: inline-block;
-  width: 40px;
-  margin-left: 20px;
-  border: 1px solid blueviolet;
+#btn-wrap {
+  text-align: center;
+}
+#send {
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
 }

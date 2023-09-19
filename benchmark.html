@@ -20,10 +20,10 @@
           <img src="./assets/img/epicode_logo.png" alt="logo" width="175px" />
         </div>
         <div id="timer-wrap">
-          <div id="timer">SECONDS <span id="timer-num">X</span> REMAINING</div>
+          <div id="timer">SECONDS <span id="timer-num"></span> REMAINING</div>
         </div>
       </header>
-      <section class="questions-wrap">
+      <section class="questions-wrap show">
         <form>
           <div id="question-1" class="question">
             <p>Come inizia un ciclo WHILE</p>
@@ -36,11 +36,11 @@
         </form>
       </section>
 
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-2" class="question">
             <p>
-              Quale metodo buil.in combina il testo di due stringhe e
+              Quale metodo build.in combina il testo di due stringhe e
               restituisce una nuova stringa?
             </p>
           </div>
@@ -53,7 +53,7 @@
         </form>
       </section>
 
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-3" class="question">
             <p>
@@ -69,7 +69,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-4" class="question">
             <p>Quale dei seguenti NON è un oggetto Javascript?</p>
@@ -83,7 +83,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-5" class="question">
             <p>A cosa serve il primo parametro di element.addEventListener?</p>
@@ -96,7 +96,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-6" class="question">
             <p>
@@ -111,7 +111,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-7" class="question">
             <p>Quale di questi NON è un valore "altezza" valido?</p>
@@ -120,12 +120,11 @@
             <button class="correct">altezza: 100wn</button>
             <button>altezza:100px</button>
             <button>altezza: 100%</button>
-
             <button>altezza: 100vh</button>
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-8" class="question">
             <p>
@@ -140,7 +139,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-9" class="question">
             <p>Cosa significa "div p" come selettore?</p>
@@ -153,7 +152,7 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap hide">
+      <section class="questions-wrap">
         <form>
           <div id="question-10" class="question">
             <p>
@@ -169,16 +168,20 @@
           </div>
         </form>
       </section>
-      <section class="hide">
+      <section class="questions-wrap">
         <div class="answers">
           Congratulation, you've finished the test. Check to see results
         </div>
         <div><button>CHECK RESULTS</button></div>
       </section>
+      <div id="btn-wrap">
+        <div><button id="send">Confirm</button></div>
+      </div>
       <footer>
-        <div>QUESTION <span> X </span><b> / 10 </b></div>
+        <div>QUESTION <span id="question-num"> 1 </span><b> / 10 </b></div>
       </footer>
     </div>
+    <script src="benchmark/bench.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
