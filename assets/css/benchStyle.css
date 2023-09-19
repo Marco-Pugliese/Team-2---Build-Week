@@ -66,11 +66,21 @@ section {
 #logo > img {
   padding: 40px 80px;
 }
+#timer-wrap-cover {
+  margin-left: 80vw;
+  border: 10px solid red;
+  transform: translateY(-60px);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
+}
 #timer-wrap {
   text-align: center;
-  margin-left: 80vw;
-  border: 10px solid #00ffff;
-  transform: translateY(-45px);
+  transform: translate(-10px, -10px);
+  border: 10px solid teal;
+  /* border-image: linear-gradient(10%, transparent, 90% orange); */
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -106,4 +116,20 @@ footer b {
   color: white;
   padding: 10px;
   border: none;
+}
+#finished {
+  margin-top: 150px;
+  font-size: 1.3em;
+  text-align: center;
+}
+#finished button {
+  margin-top: 250px;
+  background: none;
+  color: white;
+  padding: 15px;
+  border-color: blueviolet;
+}
+#finished button:hover {
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.313);
+  cursor: pointer;
 }

@@ -19,8 +19,10 @@
         <div id="logo">
           <img src="./assets/img/epicode_logo.png" alt="logo" width="175px" />
         </div>
-        <div id="timer-wrap">
-          <div id="timer">SECONDS <span id="timer-num"></span> REMAINING</div>
+        <div id="timer-wrap-cover">
+          <div id="timer-wrap">
+            <div id="timer">SECONDS <span id="timer-num"></span> REMAINING</div>
+          </div>
         </div>
       </header>
       <section class="questions-wrap show">
@@ -168,11 +170,13 @@
           </div>
         </form>
       </section>
-      <section class="questions-wrap">
-        <div class="answers">
+      <section class="questions-wrap" id="finished">
+        <div class="">
           Congratulation, you've finished the test. Check to see results
         </div>
-        <div><button>CHECK RESULTS</button></div>
+        <div>
+          <a href="resultPage.html"><button>CHECK RESULTS</button></a>
+        </div>
       </section>
       <div id="btn-wrap">
         <div><button id="send">Confirm</button></div>
@@ -181,7 +185,7 @@
         <div>QUESTION <span id="question-num"> 1 </span><b> / 10 </b></div>
       </footer>
     </div>
-    <script src="benchmark/bench.js"></script>
+    <!-- <script src="benchmark/bench.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
