@@ -55,20 +55,67 @@ footer {
 #logo > img {
   padding: 40px 80px;
 }
+<<<<<<< Updated upstream
 #timer-wrap {
   text-align: center;
   margin-left: 80vw;
   border: 10px solid #00ffff;
   transform: translateY(-45px);
   border-radius: 50%;
+=======
+/*#timer-wrap-cover {
+  margin-left: 80vw;
+  /* border: 10px solid red; */
+  /*transform: translateY(-60px);
+  border-radius: 50%;
   width: 100px;
   height: 100px;
   color: white;
   box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
+}*/
+/*#timer-wrap {
+  text-align: center;
+  transform: translate(-10px, -10px);
+  border: 10px solid rgb(3, 207, 207);
+  /* background: linear-gradient(to right, white 10%, teal 20%, red 70%); */
+ /* border-radius: 50%;
+>>>>>>> Stashed changes
+  width: 100px;
+  height: 100px;
+  color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
+} */
+
+@keyframes fill {
+  0% {
+    stroke-dasharray: 0 283;
+  }
+  50% {
+    stroke-dasharray: 283;
+  }
+  100% {
+    stroke-dasharray: 0 283;
+  }
 }
+
+.circle {
+  stroke-dasharray: 283;
+  animation: fill 60s linear infinite;
+  stroke: aqua;
+  
+}
+
+
+
 #timer {
-  margin-top: 25px;
-  font-size: 0.5em;
+  
+  
+    margin-left: 61em;
+    margin-top: -131px;
+    font-size: 0.48em;
+    /* margin-left: 261em; */
+    margin-left: 128em;
+    color: white;
 }
 #timer > span {
   display: block;
