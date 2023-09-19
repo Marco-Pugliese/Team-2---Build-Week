@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 body {
+  font-family: inter;
   overflow: hidden;
 }
 header {
@@ -55,7 +58,7 @@ footer {
 #timer-wrap {
   text-align: center;
   margin-left: 80vw;
-  border: 10px solid turquoise;
+  border: 10px solid #00ffff;
   transform: translateY(-45px);
   border-radius: 50%;
   width: 100px;
@@ -73,4 +76,15 @@ footer {
 }
 footer b {
   color: rgb(183, 1, 138);
+}
+
+#check {
+  width: 50px;
+  background-color: none;
+}
+#checkbox {
+  display: inline-block;
+  width: 40px;
+  margin-left: 20px;
+  border: 1px solid blueviolet;
 }
