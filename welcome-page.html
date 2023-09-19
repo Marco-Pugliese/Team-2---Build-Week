@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/welcome-page-style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome-page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/css/welcome-page-style.css" />
-</head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo-epicode">
+          <img src="assets/img/epicode_logo.png" alt="epicode-logo" />
+        </div>
 
-<body>
-  <div id="container">
-    <header>
-      <div id="logo-epicode">
-        <img src="assets/img/epicode_logo.png" alt="epicode-logo" />
-      </div>
+        <div id="main-title">
+          <h1>Welcome to <span>your exam</span></h1>
+        </div>
+      </header>
 
-      <div id="main-title">
-        <h1>Welcome to <span>your exam</span></h1>
-      </div>
-    </header>
-
-    <main>
-      <div>
-        <h2>Instructions</h2>
-
-        <p>
-          We don't expect most engineers to know the answers to all of these
-          questions, so don't worry if you're unsure of a few of them.
-        </p>
-      </div>
-      <div>
-        <ul>
-          <li>
-            Each question is <span>timed</span> and can only be
-            <span>answered once.</span>
-          </li>
-          <li>
-            Changing browser tab or opening other windows will
-            <span>invalidate the question.</span>
-          </li>
-          <li>This exam will take approx. <span>0-5 minutes.</span></li>
-        </ul>
-      </div>
-    </main>
-
-    <footer>
-
-      <form id="form">
-
+      <main>
         <div>
+          <h2>Instructions</h2>
 
-          <div id="check">
-          <input type="checkbox" id="checkbox" required />
+          <p>
+            We don't expect most engineers to know the answers to all of these
+            questions, so don't worry if you're unsure of a few of them.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              Each question is <span>timed</span> and can only be
+              <span>answered once.</span>
+            </li>
+            <li>
+              Changing browser tab or opening other windows will
+              <span>invalidate the question.</span>
+            </li>
+            <li>This exam will take approx. <span>0-5 minutes.</span></li>
+          </ul>
+        </div>
+      </main>
+
+      <footer>
+        <form id="form">
+          <div>
+            <div id="check">
+              <input type="checkbox" id="checkbox" required />
+            </div>
+
+            <label for="checkbox"
+              >I promise to answer myself without help from anyone</label
+            >
           </div>
 
-          <label for="checkbox">I promise to answer myself without help from anyone</label>
-        </div>
+          <div id="div-button">
+            <button id="button" type="submit"><a id="link">PROCEED</a></button>
+          </div>
+        </form>
+      </footer>
+    </div>
 
-        <div id="div-button">
-          <button id="button" type="submit"><a id="link">PROCEED</a></button>
-        </div>
+    <script>
+      const form = document.getElementById("form");
 
-      </form>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
 
-    </footer>
-
-  </div>
-
-
-
-  <script>
-
-const form = document.getElementById("form")
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault()
-})
-
-
-const check = document.getElementById("check")
-const checkbox = document.getElementById("checkbox")
-const anchor  = document.getElementById("link")
-check.addEventListener("click", () => {
-  check.style.backgroundColor = "white"
-  checkbox.removeAttribute("required")
-  anchor.setAttribute("href", "benchmark.html")
-})
-
-  </script>
-
-</body>
-
+      const check = document.getElementById("check");
+      const checkbox = document.getElementById("checkbox");
+      const anchor = document.getElementById("link");
+      check.addEventListener("click", () => {
+        check.style.backgroundColor = "white";
+        checkbox.removeAttribute("required");
+        anchor.setAttribute("href", "benchmark.html");
+      });
+    </script>
+  </body>
 </html>
