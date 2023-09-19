@@ -91,3 +91,10 @@ border: 2px solid white;
 width:12px;
 height: 12px;
 }
+
+#link, #link:active, a:visited {
+  text-decoration: none;
+  color: #0b113b;
+}
+
+

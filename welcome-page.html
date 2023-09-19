@@ -61,7 +61,7 @@
         </div>
 
         <div id="div-button">
-          <button id="button" type="submit">PROCEED</button>
+          <button id="button" type="submit"><a id="link">PROCEED</a></button>
         </div>
 
       </form>
@@ -78,18 +78,16 @@ const form = document.getElementById("form")
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
-
-  window.open("https://www.google.it/")
 })
 
 
 const check = document.getElementById("check")
 const checkbox = document.getElementById("checkbox")
-
+const anchor  = document.getElementById("link")
 check.addEventListener("click", () => {
   check.style.backgroundColor = "white"
   checkbox.removeAttribute("required")
-
+  anchor.setAttribute("href", "benchmark.html")
 })
 
   </script>
