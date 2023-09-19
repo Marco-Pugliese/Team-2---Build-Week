@@ -57,7 +57,7 @@ ul {
 }
 
 footer div {
-  display: inline;
+  display: inline-block;
 }
 
 #button {
@@ -74,9 +74,20 @@ footer div {
 #button:hover {
   background-color: #757fc7;
   box-shadow: 1px 1px 30px #757fc7;
+  cursor: pointer;
 }
 
 #checkbox {
   margin-inline-start: 0.3em;
+  display:none;
 }
 
+#checkbox:hover {
+  cursor: pointer;
+}
+
+#check {
+border: 2px solid white;
+width:12px;
+height: 12px;
+}

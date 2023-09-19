@@ -52,7 +52,11 @@
       <form id="form">
 
         <div>
+
+          <div id="check">
           <input type="checkbox" id="checkbox" required />
+          </div>
+
           <label for="checkbox">I promise to answer myself without help from anyone</label>
         </div>
 
@@ -76,6 +80,16 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
 
   window.open("https://www.google.it/")
+})
+
+
+const check = document.getElementById("check")
+const checkbox = document.getElementById("checkbox")
+
+check.addEventListener("click", () => {
+  check.style.backgroundColor = "white"
+  checkbox.removeAttribute("required")
+
 })
 
   </script>
