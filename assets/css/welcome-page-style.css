@@ -11,13 +11,11 @@ body {
 }
 
 #logo-epicode img {
-  width: 170px;
-
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 #container {
-  padding: 30px 50px 60px 150px;
+  padding: 50px 125px;
 }
 
 h1 {
@@ -37,7 +35,7 @@ span {
 
 h2 {
   color: #c2128d;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "Outfit", sans-serif;

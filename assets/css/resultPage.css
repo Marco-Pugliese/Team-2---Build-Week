@@ -20,9 +20,7 @@ body {
 /* qui inizia header */
 
 header img {
-  width: 150px;
-  margin: 40px 100px;
-  margin-bottom: 20px;
+  margin: 50px 125px;
 }
 #resultsWrap {
   width: 100vw;

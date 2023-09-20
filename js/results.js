@@ -34,4 +34,6 @@ if (finalScore < 6) {
     Please if you want to retry the benchmark send us an email.<br />
     We will explain to you how you can retry it 
   </div>`;
+  const sorry = document.querySelector("#circle-exp>div>b");
+  sorry.style.color = "red";
 }

@@ -2,14 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 body {
   font-family: "outer, sans-serif";
-}
-header {
-  height: 15vh;
-}
-.container {
+  overflow: hidden;
   background: url(../img/bg.jpg) no-repeat center;
   background-size: cover;
-  min-height: 100vh;
+}
+header {
+  height: 17vh;
+}
+
+#logo > img {
+  padding: 50px 125px;
 }
 .questions-wrap {
   color: white;
@@ -23,20 +25,20 @@ footer {
 .question {
   display: block;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 40px;
   width: 70%;
   margin: 0 auto;
-  /* height: 250px; */
   padding-top: 20vh;
   padding-bottom: 7vh;
 }
 .answers button.selectedAnswer {
   background-color: rgb(183, 1, 138);
-  border-top: 3px solid;
+  border-top: 4px solid;
   border-right: 1px solid;
   border-left: 1px solid;
-  border-color: rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.7)
-    rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.647);
+  border-bottom: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.5)
+    rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.5);
 }
 .answers {
   text-align: center;
@@ -49,10 +51,11 @@ footer {
   height: 60px;
   border-radius: 100px;
   border-top: 4px solid;
-  border-right: 2px solid;
-  border-left: 2px solid;
-  border-color: white rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.5)
-    rgba(255, 255, 255, 0.8);
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.6)
+    rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.6);
   background-color: transparent;
   color: white;
 }
@@ -61,9 +64,6 @@ section {
 }
 .show {
   display: block;
-}
-#logo > img {
-  padding: 40px 80px;
 }
 #timer-wrap-cover {
   margin-left: 80vw;
