@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+body {
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+#logo-epicode img {
+  width: 145px;
+
+  margin-bottom: 70px;
+}
+
+#container {
+  padding: 30px 50px 90px 80px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Outfit", sans-serif;
+  line-height: 0.9em;
+}
+
+div #main-title {
+  width: 450px;
+  margin-bottom: 40px;
+}
+
+span {
+  font-weight: 750;
+}
+
+h2 {
+  color: #C2128D;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  width: 500px;
+  line-height: 1.2em;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: disc;
+  line-height: 1.5em;
+  margin-bottom: 70px;
+  margin-inline-start: 1.3em;
+}
+
+footer div {
+  display: inline-block;
+}
+
+#button {
+  padding: 15px 50px;
+  box-shadow: 1px 1px 30px #00ffff;
+  background-color: #00ffff;
+  color: #0b113b;
+  border:none;
+  margin-left: 100px;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+#button:hover {
+  background-color: #757fc7;
+  box-shadow: 1px 1px 30px #757fc7;
+  cursor: pointer;
+}
+
+#checkbox {
+  margin-inline-start: 0.3em;
+  display:none;
+}
+
+#checkbox:hover {
+  cursor: pointer;
+}
+
+#check {
+border: 2px solid white;
+width:12px;
+height: 12px;
+}
+
+#link, #link:active, a:visited {
+  text-decoration: none;
+  color: #0b113b;
+}
+
+

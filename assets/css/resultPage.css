@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  min-height: 100vh;
+}
+
+main,
+header,
+footer {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url(/assets/img/bg.jpg);
+  background-size: cover;
+
+  color: white;
+}
+
+/* qui inizia header */
+
+header img {
+  width: 150px;
+  margin: 40px 100px;
+  margin-bottom: 20px;
+}
+#resultsWrap {
+  width: 100vw;
+  text-align: center;
+}
+
+/* qui inizia main */
+
+main h1 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+main h2 {
+  display: inline-block;
+  color: white;
+  font-size: 60px;
+}
+
+#container-wrap {
+  text-align: center;
+  width: 100%;
+}
+.container {
+  display: inline-block;
+  padding: 60px;
+}
+
+footer {
+  text-align: center;
+}
+footer button {
+  margin-left: 20px;
+  font-size: 22px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.9em 3em;
+}
+
+#circle {
+  border: 50px solid #01ffff;
+  padding: 50px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.582);
+}
+
+b {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #01ffff;
+  font-weight: 700;
+  font-size: 1.15em;
+}
+#wrongPerc,
+#correctPerc {
+  font-size: 3em;
+}
+footer button {
+  box-shadow: 0px 0px 40px 0.5px #01ffff54;
+}
+footer button:hover {
+  cursor: pointer;
+}
+#circle-exp {
+  width: 100%;
+  transform: translateY(20px);
+  line-height: 1.1em;
+}
+#certificate {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#circle-exp > div > span {
+  font-size: 1.2em;
+}

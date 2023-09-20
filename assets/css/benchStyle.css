@@ -27,15 +27,23 @@ footer {
 }
 .question {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   width: 100vw;
   height: 25vh;
   padding-top: 15vh;
 }
+.answers button.selectedAnswer {
+  background-color: rgb(183, 1, 138);
+  border: 0.5px solid rgb(183, 1, 138);
+  border-top: 3px solid rgb(183, 1, 138);
+  border-left: 3px solid rgb(183, 1, 138);
+  border-right: 0.5 solid rgb(183, 1, 138);
+  border-bottom: 0.4 solid rgb(183, 1, 138);
+}
 .answers {
   text-align: center;
 }
-.answers button {
+.answers > button {
   text-align: center;
   width: 33%;
   height: 8vh;
@@ -49,121 +57,79 @@ footer {
   background-color: transparent;
   color: white;
 }
-.hide {
+section {
   display: none;
+}
+.show {
+  display: block;
 }
 #logo > img {
   padding: 40px 80px;
 }
-<<<<<<< Updated upstream
-#timer-wrap {
-  text-align: center;
-  margin-left: 80vw;
-  border: 10px solid #00ffff;
-  transform: translateY(-45px);
-  border-radius: 50%;
-=======
-/*#timer-wrap-cover {
+#timer-wrap-cover {
   margin-left: 80vw;
   /* border: 10px solid red; */
-  /*transform: translateY(-60px);
+  transform: translateY(-60px);
   border-radius: 50%;
   width: 100px;
   height: 100px;
   color: white;
   box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
-}*/
-/*#timer-wrap {
+}
+#timer-wrap {
   text-align: center;
   transform: translate(-10px, -10px);
-<<<<<<< Updated upstream
   border: 10px solid rgb(3, 207, 207);
   /* background: linear-gradient(to right, white 10%, teal 20%, red 70%); */
- /* border-radius: 50%;
->>>>>>> Stashed changes
+  border-radius: 50%;
   width: 100px;
   height: 100px;
   color: white;
   box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
-} */
-
-@keyframes fill {
-  0% {
-    stroke-dasharray: 0 283;
-  }
-  50% {
-    stroke-dasharray: 283;
-  }
-  100% {
-    stroke-dasharray: 0 283;
-  }
-=======
-  
-
->>>>>>> Stashed changes
 }
-
-.circle {
-  stroke-dasharray: 283;
-  animation: fill 60s linear infinite;
-  stroke: aqua;
-  
-}
-
-
-
 #timer {
-<<<<<<< Updated upstream
-  
-  
-    margin-left: 61em;
-    margin-top: -131px;
-    font-size: 0.48em;
-    /* margin-left: 261em; */
-    margin-left: 128em;
-    color: white;
-=======
   margin-top: 25px;
   font-size: 0.5em;
-  transform: translate(9px,32px);
->>>>>>> Stashed changes
 }
 #timer > span {
   display: block;
   font-size: 5em;
 }
-<<<<<<< Updated upstream
-=======
-.circle {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-top-color: rgb(3, 207, 207);
-  animation: spin 30s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(1turn); }
-}
 footer {
   margin-top: 30px;
 }
->>>>>>> Stashed changes
 footer b {
   color: rgb(183, 1, 138);
 }
 
-#check {
-  width: 50px;
-  background-color: none;
+#send.selectedBtn {
+  border: 3px solid rgb(183, 1, 138);
+  border-radius: 20px;
+  background-color: rgb(183, 1, 138);
 }
-#checkbox {
-  display: inline-block;
-  width: 40px;
-  margin-left: 20px;
-  border: 1px solid blueviolet;
+#btn-wrap {
+  text-align: center;
+}
+#send {
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+#finished {
+  margin-top: 150px;
+  font-size: 1.3em;
+  text-align: center;
+}
+#finished button {
+  margin-top: 250px;
+  background: none;
+  color: white;
+  padding: 15px;
+  border-color: blueviolet;
+}
+#finished button:hover {
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.313);
+  cursor: pointer;
 }

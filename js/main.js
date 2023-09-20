@@ -1,18 +1,7 @@
 const allBtn = document.querySelectorAll(".answers button");
-
 const conf = document.getElementById("send");
-let timeRun = 0; // Inizializza la variabile del timer
-
-// Restituisci il timer a 0
-function resetTimer() {
-  clearInterval(interval); // Interrompi il timer esistente
-  timeRun = 0;
-  countdownNumberEl.textContent = timeRun;
-}
-
 
 for (let i = 0; i < allBtn.length; i++) {
-  console.log(allBtn[i]);
   allBtn[i].addEventListener("click", (e) => {
     e.preventDefault();
     const selected = document.querySelectorAll(".selectedAnswer");
@@ -23,7 +12,6 @@ for (let i = 0; i < allBtn.length; i++) {
     allBtn[i].classList.add("chosen");
     if (allBtn[i].classList.contains("selectedAnswer")) {
       conf.classList.add("selectedBtn");
-      resetTimer();
     }
   });
 }
@@ -33,7 +21,6 @@ conf.addEventListener("click", () => {
     if (allBtn[i].className === "correct chosen") {
       scoreBenchmark++;
       allBtn[i].classList.remove("chosen");
-      
     }
   }
   console.log(scoreBenchmark);
