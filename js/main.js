@@ -14,6 +14,7 @@ function resetTimer() {
 for (let i = 0; i < allBtn.length; i++) {
   allBtn[i].addEventListener("click", (e) => {
     e.preventDefault();
+    allBtn[i].classList.add("inter");
     const selected = document.querySelectorAll(".selectedAnswer");
     for (let y = 0; y < selected.length; y++) {
       selected[y].classList.remove("selectedAnswer");
@@ -27,12 +28,9 @@ for (let i = 0; i < allBtn.length; i++) {
   });
 }
 const allCorrectChosen = document.getElementsByClassName("correct chosen");
-
 const numberOfQ = document.getElementById("question-num");
 const allSection = document.getElementsByClassName("questions-wrap");
-
 const timerNum = document.getElementById("timer-num");
-
 timerNum.innerText = 30;
 
 const startCountdown = () => {
