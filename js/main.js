@@ -1,13 +1,8 @@
 const allBtn = document.querySelectorAll(".answers button");
 const conf = document.getElementById("send");
 let timeRun = 0; // Inizializza la variabile del timer
-let finish = document.getElementById("timer-wrap-cover")
+let finish = document.getElementById("timer-wrap-cover");
 let circle = document.querySelector(".circle");
-
-
-
-
-
 
 // Restituisci il timer a 0
 function resetTimer() {
@@ -31,17 +26,7 @@ for (let i = 0; i < allBtn.length; i++) {
     }
   });
 }
-let scoreBenchmark = 0;
-conf.addEventListener("click", () => {
-  for (let i = 0; i < allBtn.length; i++) {
-    if (allBtn[i].className === "correct chosen") {
-      scoreBenchmark++;
-      allBtn[i].classList.remove("chosen");
-      
-    }
-  }
-  console.log(scoreBenchmark);
-});
+const allCorrectChosen = document.getElementsByClassName("correct chosen");
 
 const numberOfQ = document.getElementById("question-num");
 const allSection = document.getElementsByClassName("questions-wrap");
@@ -72,7 +57,6 @@ const startCountdown = () => {
       if (seconds > 10) {
         circle.style.borderTopColor = "rgb(3, 207, 207)";
       }
-      
     }
   }
   updateTimer();
@@ -80,9 +64,6 @@ const startCountdown = () => {
 };
 
 startCountdown();
-
-
-
 
 const scorripagina = () => {
   if (allSection[0].classList.contains("show")) {
@@ -146,13 +127,7 @@ conf.addEventListener("click", scorripagina);
 let countdownNumberEl = document.getElementById("timer-num");
 let countdown = 10;
 
-
-
-// countdownNumberEl.textContent = countdown;
-
-// setInterval(function () {
-//   countdown = --countdown <= 0 ? 10 : countdown;
-
-//   countdownNumberEl.textContent = countdown;
-// }, 1000);
-
+const lastBtn = document.getElementById("checkResult");
+lastBtn.addEventListener("click", () => {
+  window.location.assign(`../resultPage.html?score=${allCorrectChosen.length}`);
+});

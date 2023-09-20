@@ -6,6 +6,8 @@ body {
   background-repeat: no-repeat;
   font-family: "Outfit", sans-serif;
   background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 header img {
@@ -63,18 +65,21 @@ header img {
 }
 #comment-area textarea {
   resize: none;
+  font-family: "Outfit", sans-serif;
 }
 
 #comment {
   width: 80em;
-  height: 2.5em;
+  height: 2em;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
   background-color: transparent;
+  width: 65%;
+  overflow: hidden;
   border-bottom: 2px solid red;
   padding: 20px;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.1em;
   padding-top: 5em;
   color: white;
   font-size: 1.2em;
@@ -94,11 +99,17 @@ header img {
   background-color: #01ffff;
   border: none;
   box-shadow: 0px 0px 50px #01ffff;
-  transition: box-shadow 0.3s;
 }
 
 #comment-area button span {
-  font-size: 2.5em;
-  font-weight: 200;
-  text-shadow: 2px 2px 4px white;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 0px 2px 5px rgb(255, 255, 255);
+}
+
+textarea:focus {
+  outline: none;
+}
+#moreInfo:hover {
+  cursor: pointer;
 }
