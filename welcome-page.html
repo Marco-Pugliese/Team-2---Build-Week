@@ -84,7 +84,9 @@
         checkbox.removeAttribute("required");
       });
       anchor.addEventListener("click", () => {
-        window.open("benchmark.html");
+        if (check.style.backgroundColor === "white") {
+          window.location.assign(`./benchmark.html`);
+        }
       });
     </script>
   </body>
