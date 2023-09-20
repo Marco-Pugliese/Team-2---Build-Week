@@ -2,6 +2,13 @@ const allBtn = document.querySelectorAll(".answers button");
 const conf = document.getElementById("send");
 let timeRun = 0; // Inizializza la variabile del timer
 let finish = document.getElementById("timer-wrap-cover")
+let circle = document.querySelector(".circle");
+
+
+
+
+
+
 // Restituisci il timer a 0
 function resetTimer() {
   clearInterval(interval); // Interrompi il timer esistente
@@ -58,6 +65,14 @@ const startCountdown = () => {
       } else if (allSection[10].classList.contains("show")) {
         seconds = 30;
       }
+      if (seconds < 10) {
+        circle.style.borderTopColor = "red";
+      }
+
+      if (seconds > 10) {
+        circle.style.borderTopColor = "rgb(3, 207, 207)";
+      }
+      
     }
   }
   updateTimer();
@@ -65,6 +80,9 @@ const startCountdown = () => {
 };
 
 startCountdown();
+
+
+
 
 const scorripagina = () => {
   if (allSection[0].classList.contains("show")) {
