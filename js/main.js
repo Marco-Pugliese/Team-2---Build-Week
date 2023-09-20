@@ -1,7 +1,7 @@
 const allBtn = document.querySelectorAll(".answers button");
 const conf = document.getElementById("send");
 let timeRun = 0; // Inizializza la variabile del timer
-
+let finish = document.getElementById("timer-wrap-cover")
 // Restituisci il timer a 0
 function resetTimer() {
   clearInterval(interval); // Interrompi il timer esistente
@@ -118,6 +118,7 @@ const scorripagina = () => {
     const timerAll = document.getElementById("timer-wrap");
     timerAll.style.display = "none";
     conf.style.display = "none";
+    finish.style.display = "none";
   }
   conf.classList.remove("selectedBtn");
 };
@@ -126,6 +127,8 @@ conf.addEventListener("click", scorripagina);
 
 let countdownNumberEl = document.getElementById("timer-num");
 let countdown = 10;
+
+
 
 // countdownNumberEl.textContent = countdown;
 
