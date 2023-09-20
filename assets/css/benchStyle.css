@@ -34,11 +34,11 @@ footer {
 }
 .answers button.selectedAnswer {
   background-color: rgb(183, 1, 138);
-  border: 0.5px solid rgb(183, 1, 138);
-  border-top: 3px solid rgb(183, 1, 138);
-  border-left: 3px solid rgb(183, 1, 138);
-  border-right: 0.5 solid rgb(183, 1, 138);
-  border-bottom: 0.4 solid rgb(183, 1, 138);
+  border-top: 4px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-color: rgb(132, 0, 99) rgba(132, 0, 99, 0.8) rgba(132, 0, 99, 0.5)
+    rgba(132, 0, 99, 0.8);
 }
 .answers {
   text-align: center;
@@ -49,11 +49,11 @@ footer {
   height: 8vh;
   margin: 1%;
   border-radius: 100px;
-  border: 0.5px solid rgba(255, 255, 255, 0.753);
-  border-top: 3px solid white;
-  border-left: 3px solid white;
-  border-right: 0.5 solid rgb(255, 255, 255);
-  border-bottom: 0.4 solid rgba(255, 255, 255, 0.168);
+  border-top: 4px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-color: white rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.5)
+    rgba(255, 255, 255, 0.8);
   background-color: transparent;
   color: white;
 }

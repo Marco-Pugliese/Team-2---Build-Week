@@ -1,6 +1,5 @@
 const allBtn = document.querySelectorAll(".answers button");
-const conf = document.getElementById("send");
-
+// const conf = document.getElementById("send");
 for (let i = 0; i < allBtn.length; i++) {
   allBtn[i].addEventListener("click", (e) => {
     e.preventDefault();
@@ -15,15 +14,14 @@ for (let i = 0; i < allBtn.length; i++) {
     }
   });
 }
-let scoreBenchmark = 0;
+
+const conf = document.getElementById("send");
+const allCorrectChosen = document.getElementsByClassName("correct chosen");
+let result = allCorrectChosen.length;
 conf.addEventListener("click", () => {
-  for (let i = 0; i < allBtn.length; i++) {
-    if (allBtn[i].className === "correct chosen") {
-      scoreBenchmark++;
-      allBtn[i].classList.remove("chosen");
-    }
-  }
-  console.log(scoreBenchmark);
+  console.log(allCorrectChosen.length);
+  const value = allCorrectChosen.length;
+  return value;
 });
 
 const numberOfQ = document.getElementById("question-num");
@@ -117,10 +115,9 @@ conf.addEventListener("click", scorripagina);
 let countdownNumberEl = document.getElementById("timer-num");
 let countdown = 10;
 
-// countdownNumberEl.textContent = countdown;
-
-// setInterval(function () {
-//   countdown = --countdown <= 0 ? 10 : countdown;
-
-//   countdownNumberEl.textContent = countdown;
-// }, 1000);
+const lastBtn = document.getElementById("checkResult");
+lastBtn.addEventListener("click", () => {
+  window.location.assign(
+    "../resultPage.html?score=`${allCorrectChosen.length}`"
+  );
+});
