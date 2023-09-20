@@ -1,6 +1,5 @@
 const allBtn = document.querySelectorAll(".answers button");
-<<<<<<< Updated upstream
-=======
+
 const conf = document.getElementById("send");
 let timeRun = 0; // Inizializza la variabile del timer
 
@@ -10,7 +9,7 @@ function resetTimer() {
   timeRun = 0;
   countdownNumberEl.textContent = timeRun;
 }
->>>>>>> Stashed changes
+
 
 for (let i = 0; i < allBtn.length; i++) {
   console.log(allBtn[i]);
