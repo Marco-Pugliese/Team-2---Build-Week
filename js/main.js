@@ -37,7 +37,7 @@ timerNum.innerText = 30;
 
 const startCountdown = () => {
   const timerElement = document.getElementById("timer-num");
-  seconds = 30;
+  let seconds = 30;
 
   function updateTimer() {
     timerElement.textContent = seconds;

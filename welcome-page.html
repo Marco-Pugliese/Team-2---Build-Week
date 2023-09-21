@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/welcome-page-style.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
   </head>
 
   <body>
@@ -21,16 +22,16 @@
           <img
             src="assets/img/epicode_logo.png"
             alt="epicode-logo"
-            width="200px"
+            width="160px"
           />
         </div>
 
         <div id="main-title">
-          <h1>Welcome to <span>your exam</span></h1>
+          <h1 class="outer">Welcome to <span>your exam</span></h1>
         </div>
       </header>
 
-      <main>
+      <main class="inter">
         <div>
           <h2>Instructions</h2>
 
@@ -54,20 +55,23 @@
         </div>
       </main>
 
-      <footer>
+      <footer class="inter">
         <form id="form">
-          <div>
-            <div id="check">
-              <input type="checkbox" id="checkbox" required />
+          <div id="divide">
+            <div id="div-checkbox">
+              <div id="check">
+                <input type="checkbox" id="checkbox" required />
+              </div>
+              <div id="lableforcheck">
+                <label for="checkbox"
+                  >I promise to answer myself without help from anyone</label
+                >
+              </div>
             </div>
 
-            <label for="checkbox"
-              >I promise to answer myself without help from anyone</label
-            >
-          </div>
-
-          <div id="div-button">
-            <button id="button" type="submit">PROCEED</button>
+            <div id="div-button">
+              <button id="button" type="submit">PROCEED</button>
+            </div>
           </div>
         </form>
       </footer>

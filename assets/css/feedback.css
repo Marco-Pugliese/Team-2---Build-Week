@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
-
 body {
   background-image: url(/assets/img/bg.jpg);
   background-repeat: no-repeat;
-  font-family: "Outfit", sans-serif;
+
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
@@ -22,15 +19,17 @@ header img {
 }
 
 .title h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
+  font-weight: 700;
   margin-bottom: 0.05em;
+  margin-top: 0.6em;
 }
 
 .title h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
+  line-height: 1.2em;
   margin-top: 1em;
   margin-bottom: 0.3em;
-  font-weight: 200;
 }
 
 #stars {
@@ -39,23 +38,21 @@ header img {
 }
 
 .star {
-  border-radius: 50px;
-  font-size: 4.6em;
+  font-size: 3em;
   color: #000423;
   cursor: pointer;
   margin: 0.1em;
 }
 
 .star.selected {
-  color: #01ffff;
+  color: #00ffff;
 }
 
 #comment-area h3 {
-  font-size: 1.8em;
-  margin-top: 1em;
+  font-size: 1.5em;
+  margin-top: 1.5em;
   margin-bottom: 0.3em;
   color: white;
-  font-weight: 200;
 }
 
 #comment-area {
@@ -63,45 +60,44 @@ header img {
 }
 #comment-area textarea {
   resize: none;
-  font-family: "Outfit", sans-serif;
 }
 
 #comment {
-  width: 80em;
-  height: 2em;
+  width: 80%;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
   background-color: transparent;
   width: 65%;
   overflow: hidden;
-  border-bottom: 2px solid red;
-  padding: 20px;
-  padding-bottom: 0.1em;
-  padding-top: 5em;
+  border-bottom: 2px solid #d20084;
+  padding-top: 3.5em;
+  padding-bottom: 0px;
+  padding-left: 55px;
   color: white;
   font-size: 1.2em;
 }
 
 #comment::placeholder {
-  color: #999;
+  color: #767676;
+  font-family: "inter", sans-serif;
   width: 15em;
-  font-size: 1.4em;
+  font-size: 0.8em;
 }
 
 #comment-area button {
   margin-top: 5em;
-  width: 320px;
-  height: 70px;
-  color: black;
-  background-color: #01ffffcb;
+  width: 220px;
+  height: 60px;
+  background-color: #00ffff;
   border: none;
-  box-shadow: 0px 0px 50px #01ffffd3;
+  box-shadow: 0px 0px 25px #01ffffd3;
 }
 
 #comment-area button span {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: rgb(0, 0, 58);
   text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.62);
 }
 

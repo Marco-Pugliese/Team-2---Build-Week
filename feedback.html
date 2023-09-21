@@ -11,16 +11,17 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/feedback.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
     <title>Epicode - Feedback page</title>
   </head>
   <body>
     <header class="Logo">
-      <img src="assets/img/epicode_logo.png" alt="Logo EPICODE" width="200px" />
+      <img src="assets/img/epicode_logo.png" alt="Logo EPICODE" width="160px" />
     </header>
     <main>
       <div class="title">
         <h1>Tell us how it's going</h1>
-        <h3>
+        <h3 class="inter">
           From 0 to 10, how likely are you to recommend EPICODE <br />
           to a friends or a colleague?
         </h3>
@@ -37,9 +38,13 @@
         <span class="star" onclick="setRating(9)">&#9733;</span>
         <span class="star" onclick="setRating(10)">&#9733;</span>
       </div>
-      <div id="comment-area">
+      <div class="inter" id="comment-area">
         <h3>Leave us an open feedback about your experience so far</h3>
-        <textarea id="comment" placeholder="Write your comment here"></textarea
+        <textarea
+          class="inter"
+          id="comment"
+          placeholder="Write your comment here"
+        ></textarea
         ><br />
 
         <button id="moreInfo" onclick="submitFeedback()">
