@@ -37,7 +37,7 @@ timerNum.innerText = 30;
 
 const startCountdown = () => {
   const timerElement = document.getElementById("timer-num");
-  let seconds = 30;
+  seconds = 30;
 
   function updateTimer() {
     timerElement.textContent = seconds;
@@ -45,8 +45,8 @@ const startCountdown = () => {
     for (let i = 0; i < 10; i++) {
       if (seconds < 0 && allSection[i]) {
         clearInterval(interval);
-        scorripagina();
         startCountdown();
+        scorripagina();
       } else if (allSection[10].classList.contains("show")) {
         seconds = 30;
       }
