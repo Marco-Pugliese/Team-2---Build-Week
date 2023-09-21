@@ -24,6 +24,7 @@ We'll send you the certificate in few minutes. <br />
 Check your email (including promotions / spam folder)
 </div>`;
 }
+
 if (finalScore < 6) {
   examScore.innerHTML = ` <div>
     <span> We're sorry!</span>
@@ -37,22 +38,17 @@ if (finalScore < 6) {
   const sorry = document.querySelector("#circle-exp>div>b");
   sorry.style.color = "red";
 }
-let final = finalScore*10
-console.log(final)
+let final = finalScore * 10;
+console.log(final);
 
+let res = document.getElementById("circ");
 
-let res = document.getElementById("circ")
+let valuesuccess = final;
 
+console.log(valuesuccess);
 
-
-let valuesuccess = final
-
-
-
-console.log(valuesuccess)
-    
 let grafico = function () {
-    res.innerHTML = `
+  res.innerHTML = `
     <path
     class="circle-bg"
     d="M18 2.0845
@@ -65,9 +61,7 @@ let grafico = function () {
     d="M18 2.0845
     a 15.9155 15.9155 0 0 1 0 31.831
     a 15.9155 15.9155 0 0 1 0 -31.831"
-  /> `
-}
-    
+  /> `;
+};
+
 grafico();
-
-

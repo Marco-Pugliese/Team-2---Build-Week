@@ -21,17 +21,6 @@ header img {
 
 /* qui inizia main */
 
-
-
-
-
-
-
-
-
-
-
-
 main h1 {
   text-align: center;
   color: white;
@@ -66,10 +55,10 @@ main h2 {
   display: inline-block;
 }
 
-footer {
+#footer {
   text-align: center;
 }
-footer button {
+#footer button {
   margin-top: 80px;
   margin-left: 25px;
   font-size: 22px;
@@ -85,32 +74,32 @@ footer button {
   display: flex;
   flex-flow: row nowrap;
   position: absolute;
-    width: 60em;
-    height: 84em;
-    /* margin-top: 20em; */
-    /* left: 26em; */
-    /* top: 22em; */
-    top: 39em;
-    left: 29em;
-    transform: translate(-83%, -50%);
+  width: 60em;
+  height: 84em;
+  /* margin-top: 20em; */
+  /* left: 26em; */
+  /* top: 22em; */
+  top: 39em;
+  left: 29em;
+  transform: translate(-83%, -50%);
 }
 
 .single-chart {
   width: 33%;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .circular-chart {
   display: block;
-    margin: 10px auto;
-    /* max-width: 17em; */
-    width: 60.5em;
-    height: 23em;
+  margin: 10px auto;
+  /* max-width: 17em; */
+  width: 60.5em;
+  height: 23em;
 }
 
 .circle-bg {
   fill: none;
-  stroke: #C2138D;
+  stroke: #c2138d;
   stroke-width: 4;
 }
 
@@ -128,67 +117,13 @@ footer button {
 }
 
 .circular-chart.blue .circle_1 {
-  stroke: #01FFFF;
+  stroke: #01ffff;
+}
+#rateUs {
+  z-index: 1111;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* GRAFICO CSS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #circle {
   position: relative;
@@ -201,9 +136,7 @@ footer button {
   width: 200px;
   height: 200px;
   box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.582);
-
 }
-
 
 b {
   margin-top: 10px;
@@ -217,10 +150,10 @@ b {
 #correctPerc {
   font-size: 3em;
 }
-footer button {
+#footer button {
   box-shadow: 0px 0px 40px 0.5px #01ffff54;
 }
-footer button:hover {
+#footer button:hover {
   cursor: pointer;
 }
 #circle-exp {
