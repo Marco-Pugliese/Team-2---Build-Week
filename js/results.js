@@ -26,12 +26,12 @@ Check your email (including promotions / spam folder)
 }
 
 if (finalScore < 6) {
-  examScore.innerHTML = ` <div>
+  examScore.innerHTML = ` <div class="inter">
     <span> We're sorry!</span>
 
-    <b>You have not passed the Exam.</b>
+    <b class="inter">You have not passed the Exam.</b>
   </div>
-  <div id="certificate">
+  <div id="certificate" class="inter">
     Please if you want to retry the benchmark send us an email.<br />
     We will explain to you how you can retry it 
   </div>`;

@@ -69,7 +69,7 @@ const showFirst = () => {
   <div id="question-1" class="question">
     <p class="h1">Come inizia un ciclo WHILE?</p>
   </div>
-  <div class="answers">
+  <div class="answers inter">
     <button class="correct">while(i&lt;=10;i++)</button>
     <button>while(i&lt;=10)</button>
     <br />
@@ -92,7 +92,7 @@ const scorripagina = () => {
         restituisce una nuova stringa?
       </p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button>attach()</button>
       <button>append()</button> <br />
       <button class="correct">concat()</button>
@@ -112,7 +112,7 @@ const scorripagina = () => {
         Javascript
       </p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button>if(i=5){}</button>
       <button class="correct">if(i===5){}</button> <br />
       <button>if i==5 then</button>
@@ -130,7 +130,7 @@ const scorripagina = () => {
       <p>Quale dei seguenti NON è un oggetto Javascript?</p>
     </div>
 
-    <div class="answers">
+    <div class="answers inter">
       <button class="correct">const obj={name="John"};</button>
       <button>const obj=new Object()</button> <br />
       <button>const obj={}</button>
@@ -147,7 +147,7 @@ const scorripagina = () => {
     <div id="question-5" class="question">
       <p>A cosa serve il primo parametro di element.addEventListener?</p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button>Richiamare</button>
       <button>Chiamante</button> <br />
       <button>Invocare</button>
@@ -161,7 +161,7 @@ const scorripagina = () => {
     allSection[4].classList.remove("show");
     allSection[5].classList.add("show");
     allSection[5].innerHTML = `<form class="forms">
-    <div id="question-6" class="question">
+    <div id="question-6" class="question inter">
       <p>
         Quando si seleziona un elemento nel DOM con Javascript,si può
         ottenere o impostare ogni regola CSS con la sua proprietà di
@@ -183,7 +183,7 @@ const scorripagina = () => {
     <div id="question-7" class="question">
       <p>Quale di questi NON è un valore "altezza" valido?</p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button class="correct">altezza: 100wn</button>
       <button>altezza:100px</button> <br />
       <button>altezza: 100%</button>
@@ -202,7 +202,7 @@ const scorripagina = () => {
         Quale tag HTML è usato per definire un foglio di stile interno?
       </p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button>&lt;copione&gt;</button>
       <button>&lt;CSS&gt;</button> <br />
       <button class="correct">&lt;stile&gt;</button>
@@ -219,7 +219,7 @@ const scorripagina = () => {
     <div id="question-9" class="question">
       <p>Cosa significa "div p" come selettore?</p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button class="correct">Tutti i p all'interno di un div</button>
       <button>Tutti i div all'interno di un p</button> <br />
       <button>Tutti i div e tutti i p</button>
@@ -239,7 +239,7 @@ const scorripagina = () => {
         Javascript?
       </p>
     </div>
-    <div class="answers">
+    <div class="answers inter">
       <button>string</button>
       <button>int</button> <br />
       <button>id</button>

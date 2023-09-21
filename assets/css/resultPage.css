@@ -146,7 +146,7 @@ b {
 
 #circle-exp {
   width: 100%;
-  transform: translateY(20px);
+  transform: translateY(10px);
   line-height: 1.1em;
 }
 #certificate {
@@ -154,6 +154,7 @@ b {
   color: rgba(255, 255, 255, 0.8);
 }
 #circle-exp > div > span {
+  display: inline-block;
   font-size: 1.2em;
 }
 
@@ -176,4 +177,9 @@ footer button {
   background-color: transparent;
   color: white;
   padding: 0.9em 3em;
+}
+#numOfCorrect,
+#numOfWrong {
+  display: inline-block;
+  margin-top: 8px;
 }
