@@ -3,7 +3,7 @@ body {
 }
 
 body {
-  background-image: url(/assets/img/bg.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   overflow: hidden;
   color: white;
