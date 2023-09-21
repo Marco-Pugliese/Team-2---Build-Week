@@ -266,5 +266,7 @@ let countdown = 10;
 
 const lastBtn = document.getElementById("checkResult");
 lastBtn.addEventListener("click", () => {
-  window.location.assign(`../resultPage.html?score=${allCorrectChosen.length}`);
+  window.location.assign(
+    `../../../../../../Users/marco/Desktop/GitHub/Team-2---Build-Week/resultPage.html?score=${allCorrectChosen.length}`
+  );
 });
