@@ -29,6 +29,17 @@ header img {
 
 /* qui inizia main */
 
+
+
+
+
+
+
+
+
+
+
+
 main h1 {
   text-align: center;
   color: white;
@@ -76,16 +87,131 @@ footer button {
   padding: 0.9em 3em;
 }
 
+/* GRAFICO CSS */
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+    width: 60em;
+    height: 84em;
+    /* margin-top: 20em; */
+    /* left: 26em; */
+    /* top: 22em; */
+    top: 39em;
+    left: 29em;
+    transform: translate(-83%, -50%);
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+    margin: 10px auto;
+    /* max-width: 17em; */
+    width: 60.5em;
+    height: 23em;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #C2138D;
+  stroke-width: 4;
+}
+
+.circle_1 {
+  fill: none;
+  stroke-width: 4.3;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.blue .circle_1 {
+  stroke: #01FFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRAFICO CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #circle {
+  position: relative;
+
   border-radius: 50%;
-  border-width: 50px;
+  border-width: 23px;
   border-style: solid;
-  border-color: #01ffff;
+  /* border-color: #01ffff; */
   padding: 50px;
   width: 200px;
   height: 200px;
   box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.582);
+
 }
+
 
 b {
   margin-top: 10px;
