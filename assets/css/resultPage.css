@@ -80,7 +80,7 @@ footer button {
   border-radius: 50%;
   border-width: 50px;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #01ffff, red) 1;
+  border-color: #01ffff;
   padding: 50px;
   width: 200px;
   height: 200px;
