@@ -5,11 +5,14 @@ body {
 body {
   background-image: url(/assets/img/bg.jpg);
   background-size: cover;
-
+  overflow: hidden;
   color: white;
 }
 
 /* qui inizia header */
+header {
+  height: 15vh;
+}
 
 header img {
   margin: 50px 125px;
@@ -54,18 +57,8 @@ main h2 {
   padding-top: 50px;
   display: inline-block;
 }
-
-#footer {
-  text-align: center;
-}
-#footer button {
-  margin-top: 80px;
-  margin-left: 25px;
-  font-size: 22px;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  padding: 0.9em 3em;
+.flex-wrapper {
+  z-index: 0;
 }
 
 /* GRAFICO CSS */
@@ -150,12 +143,7 @@ b {
 #correctPerc {
   font-size: 3em;
 }
-#footer button {
-  box-shadow: 0px 0px 40px 0.5px #01ffff54;
-}
-#footer button:hover {
-  cursor: pointer;
-}
+
 #circle-exp {
   width: 100%;
   transform: translateY(20px);
@@ -167,4 +155,25 @@ b {
 }
 #circle-exp > div > span {
   font-size: 1.2em;
+}
+
+footer button {
+  box-shadow: 0px 0px 40px 0.5px #01ffff54;
+}
+footer button:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  transform: translateY(5vh);
+}
+footer button {
+  margin-top: 80px;
+  margin-left: 25px;
+  font-size: 22px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.9em 3em;
 }
