@@ -78,7 +78,9 @@ footer button {
 
 #circle {
   border-radius: 50%;
-  border: 50px solid #01ffff;
+  border-width: 50px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #01ffff, red) 1;
   padding: 50px;
   width: 200px;
   height: 200px;
