@@ -23,6 +23,7 @@
         <h1>Results</h1>
         <h3>The summary of your answers:</h3>
       </div>
+
       <div id="container-wrap">
         <div id="correct-wrap" class="container">
           <div><h2>Correct</h2></div>
@@ -32,6 +33,29 @@
 
         <div id="circle-wrap" class="container">
           <div id="circle">
+            <!-- GRAFICO -->
+            <div class="flex-wrapper">
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart blue" id="circ">
+                  <path
+                    class="circle-bg"
+                    d="M18 2.0845
+a 15.9155 15.9155 0 0 1 0 31.831
+a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path
+                    class="circle_1"
+                    stroke-dasharray="10, 100"
+                    d="M18 2.0845
+a 15.9155 15.9155 0 0 1 0 31.831
+a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- GRAFICO -->
+
             <div id="circle-exp">
               <div class="inter">
                 <span> Congratulations!</span>
@@ -56,7 +80,7 @@
 
     <footer>
       <div>
-        <a href="feedback.html"><button id="rate-btn">RATE US</button></a>
+        <a href="/feedback.html"><button id="rate-btn">RATE US</button></a>
       </div>
     </footer>
     <script src="js/results.js"></script>

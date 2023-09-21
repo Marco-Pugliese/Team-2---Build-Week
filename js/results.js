@@ -37,3 +37,37 @@ if (finalScore < 6) {
   const sorry = document.querySelector("#circle-exp>div>b");
   sorry.style.color = "red";
 }
+let final = finalScore*10
+console.log(final)
+
+
+let res = document.getElementById("circ")
+
+
+
+let valuesuccess = final
+
+
+
+console.log(valuesuccess)
+    
+let grafico = function () {
+    res.innerHTML = `
+    <path
+    class="circle-bg"
+    d="M18 2.0845
+    a 15.9155 15.9155 0 0 1 0 31.831
+    a 15.9155 15.9155 0 0 1 0 -31.831"
+  />
+  <path
+    class="circle_1"
+    stroke-dasharray="${valuesuccess}, 100"
+    d="M18 2.0845
+    a 15.9155 15.9155 0 0 1 0 31.831
+    a 15.9155 15.9155 0 0 1 0 -31.831"
+  /> `
+}
+    
+grafico();
+
+
