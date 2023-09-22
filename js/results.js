@@ -1,20 +1,20 @@
 const searchParams = new URLSearchParams(window.location.search);
 const finalScore = searchParams.get("score");
-console.log(parseInt(finalScore));
 
 const numOfCorrect = document.getElementById("numOfCorrect");
 const numOfWrong = document.getElementById("numOfWrong");
 const examScore = document.getElementById("circle-exp");
 const wrongPerc = document.getElementById("wrongPerc");
 const correctPerc = document.getElementById("correctPerc");
+
 numOfCorrect.innerText = finalScore;
 numOfWrong.innerText = 10 - finalScore;
 correctPerc.innerText = `${finalScore * 10} %`;
-correctPerc.style.fontWeight = "600";
+correctPerc.style.fontWeight = "700";
 wrongPerc.innerText = `${100 - finalScore * 10} %`;
-wrongPerc.style.fontWeight = "600";
+wrongPerc.style.fontWeight = "700";
 if (finalScore > 5) {
-  examScore.innerHTML = ` <div>
+  examScore.innerHTML = ` <div class="inter">
 <span> Congratulations!</span>
 
 <b>You passed the Exam.</b>
@@ -39,13 +39,9 @@ if (finalScore < 6) {
   sorry.style.color = "red";
 }
 let final = finalScore * 10;
-console.log(final);
-
-let res = document.getElementById("circ");
-
 let valuesuccess = final;
 
-console.log(valuesuccess);
+let res = document.getElementById("circ");
 
 let grafico = function () {
   res.innerHTML = `

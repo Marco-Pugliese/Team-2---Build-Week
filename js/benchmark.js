@@ -18,9 +18,11 @@ const allNewBtn = () => {
       const selected = document.querySelectorAll(".selectedAnswer");
       for (let y = 0; y < selected.length; y++) {
         selected[y].classList.remove("selectedAnswer");
+        selected[y].classList.remove("chosen");
       }
       allBtn[i].classList.toggle("selectedAnswer");
       allBtn[i].classList.add("chosen");
+
       if (allBtn[i].classList.contains("selectedAnswer")) {
         conf.classList.add("selectedBtn");
         resetTimer();
@@ -45,8 +47,8 @@ const startCountdown = () => {
     for (let i = 0; i < 10; i++) {
       if (seconds < 0 && allSection[i]) {
         clearInterval(interval);
-        startCountdown();
         scorripagina();
+        startCountdown();
       } else if (allSection[10].classList.contains("show")) {
         seconds = 30;
       }
@@ -62,8 +64,8 @@ const startCountdown = () => {
   updateTimer();
   const interval = setInterval(updateTimer, 1000);
 };
-
 startCountdown();
+
 const showFirst = () => {
   allSection[0].innerHTML = `<form class="forms">
   <div id="question-1" class="question">
@@ -80,6 +82,7 @@ const showFirst = () => {
   allNewBtn();
 };
 showFirst();
+
 const scorripagina = () => {
   if (allSection[0].classList.contains("show")) {
     numberOfQ.innerText = "2";

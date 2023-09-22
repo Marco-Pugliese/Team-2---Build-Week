@@ -47,10 +47,10 @@ main h2 {
   text-align: center;
 }
 #correct-wrap {
-  padding-right: 60px;
+  padding-right: 80px;
 }
 #wrong-wrap {
-  padding-left: 60px;
+  padding-left: 80px;
 }
 .container {
   text-align: center;
@@ -113,22 +113,20 @@ main h2 {
   stroke: #01ffff;
 }
 #rateUs {
-  z-index: 1111;
+  z-index: 1;
 }
 
 /* GRAFICO CSS */
 
 #circle {
   position: relative;
-
   border-radius: 50%;
   border-width: 23px;
   border-style: solid;
-  /* border-color: #01ffff; */
   padding: 50px;
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.582);
+  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.817);
 }
 
 b {
@@ -167,7 +165,7 @@ footer button:hover {
 
 footer {
   text-align: center;
-  transform: translateY(5vh);
+  transform: translateY(10vh);
 }
 footer button {
   margin-top: 80px;
@@ -181,5 +179,5 @@ footer button {
 #numOfCorrect,
 #numOfWrong {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 10px;
 }
