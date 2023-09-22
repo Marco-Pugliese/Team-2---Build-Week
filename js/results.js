@@ -65,3 +65,8 @@ let grafico = function () {
 };
 
 grafico();
+
+const btn = document.getElementById("rate-btn");
+btn.addEventListener("click", () => {
+  window.location.assign("./feedback.html");
+});
