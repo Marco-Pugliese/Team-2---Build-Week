@@ -266,5 +266,5 @@ let countdown = 10;
 
 const lastBtn = document.getElementById("checkResult");
 lastBtn.addEventListener("click", () => {
-  window.location.assign(`../resultPage.html?score=${allCorrectChosen.length}`);
+  window.location.assign(`./resultPage.html?score=${allCorrectChosen.length}`);
 });
